@@ -6,7 +6,9 @@ import 'MyAppbar.dart';
 import 'MyText.dart';
 import 'MyContainer.dart';
 import 'MyColumnandrow.dart';
-import 'Test.dart';
+import 'Test2.dart';
+import 'Setting.dart';
+import 'menu.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Test(),
+      home: const Test2(),
     );
   }
 }

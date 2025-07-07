@@ -1,51 +1,63 @@
-import "package:flutter/material.dart";
-
-class Myappbar extends StatelessWidget {
-  const Myappbar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Hihi"),
-        backgroundColor: Colors.yellow,
-        elevation: 45,
-        actions: [
-          IconButton(
-            onPressed: () {
-              print("B1");
-            },
-            icon: Icon(Icons.search),
-          ),
-          IconButton(
-            onPressed: () {
-              print("B2");
-            },
-            icon: Icon(Icons.add),
-          ),
-          IconButton(
-            onPressed: () {
-              print("B3");
-            },
-            icon: Icon(Icons.more_horiz),
-          ),
-        ],
-      ),
-
-      body: Center(child: Text("123")),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("Success");
-        },
-        child: const Icon(Icons.add_ic_call),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Trang chủ"),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Tìm kiêm"),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: "Thêm"),
-        ],
-      ),
-    );
-  }
-}
+// import "package:flutter/material.dart";
+//
+// class Myappbar extends StatefulWidget {
+//   const Myappbar({super.key});
+//
+//   @override
+//   State<Myappbar> createState() => _MyappbarState();
+// }
+//
+// class _MyappbarState extends State<Myappbar> {
+//   final List<String> items = [
+//     'Item1',
+//     'Item2',
+//     'Item3',
+//     'Item4',
+//   ];
+//   String? selectedValue;
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: DropdownButtonHideUnderline(
+//           child: Drop<String>(
+//             isExpanded: true,
+//             hint: Text(
+//               'Select Item',
+//               style: TextStyle(
+//                 fontSize: 14,
+//                 color: Theme.of(context).hintColor,
+//               ),
+//             ),
+//             items: items
+//                 .map((String item) => DropdownMenuItem<String>(
+//               value: item,
+//               child: Text(
+//                 item,
+//                 style: const TextStyle(
+//                   fontSize: 14,
+//                 ),
+//               ),
+//             ))
+//                 .toList(),
+//             value: selectedValue,
+//             onChanged: (String? value) {
+//               setState(() {
+//                 selectedValue = value;
+//               });
+//             },
+//             buttonStyleData: const Button(
+//               padding: EdgeInsets.symmetric(horizontal: 16),
+//               height: 40,
+//               width: 140,
+//             ),
+//             menuItemStyleData: const MenuItemStyleData(
+//               height: 40,
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+//
